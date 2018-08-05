@@ -60,7 +60,7 @@ namespace GradeBookTests
             object gradeBook = Activator.CreateInstance(standardGradeBook, "WeightedTest", true);
 
             // Assert that is weighted is true
-            Assert.True(gradeBook.GetType().GetProperty("IsWeighted").GetValue(gradeBook).ToString().ToLower() == "true", "`GradeBook.GradeBooks.BaseGradeBook`'s constructor didn't propertly set the `IsWeighted` property based on the provided bool parameter");
+            Assert.True(gradeBook.GetType().GetProperty("IsWeighted").GetValue(gradeBook).ToString().ToLower() == "true", "`GradeBook.GradeBooks.BaseGradeBook`'s constructor didn't properly set the `IsWeighted` property based on the provided bool parameter");
         }
 
         /// <summary>
